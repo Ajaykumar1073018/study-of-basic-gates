@@ -1,24 +1,55 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
+### study-of-basic-gates
 
-**AIM:**
+**AIM:** 
 
-To implement the given logic function verify its operation in Quartus using Verilog programming.
+To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D 
+**Equipments Required:**
 
-F2=xy’z+x’y’z+w’xy+wx’y+wxy
-
-**Equipment Required:**
-
-Hardware – PCs, Cyclone II , USB flasher
-
-**Software – Quartus prime**
+Software – Quartus prime 
 
 **Theory**
 
-**Logic Diagram**
+Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
-**Procedure**
+AND gate OR gate NOT gate NAND gate NOR gate Ex-OR gate Ex-NOR gate
+
+**AND gate**
+
+The AND gate is an electronic circuit that gives a high output (1) only if all its inputs are high. A dot (.) is used to show the AND operation i.e. A.B or can be written as AB
+Y= A.B
+
+**OR gate** 
+
+The OR gate is an electronic circuit that gives a high output (1) if one or more of its inputs are high. A plus (+) is used to show the OR operation.
+Y= A+B
+
+**NOT gate**
+
+The NOT gate is an electronic circuit that produces an inverted version of the input at its output. It is also known as an inverter. If the input variable is A, the inverted output is known as NOT A. This is also shown as A' or A with a bar over the top, as shown at the outputs.
+Y= A'
+
+**NAND gate**
+
+This is a NOT-AND gate which is equal to an AND gate followed by a NOT gate. The outputs of all NAND gates are high if any of the inputs are low. The symbol is an AND gate with a small circle on the output. The small circle represents inversion.
+Y= (AB)’
+
+**NOR gate**
+
+This is a NOT-OR gate which is equal to an OR gate followed by a NOT gate. The outputs of all NOR gates are low if any of the inputs are high. The symbol is an OR gate with a small circle on the output. The small circle represents inversion.
+Y= (A+B)’
+
+**Ex-OR gate**
+
+The 'Exclusive-OR' gate is a circuit which will give a high output if either, but not both of its two inputs are high. An encircled plus sign (⊕) is used to show the Ex-OR operation.
+Y= A⊕B
+
+**Ex-NOR gate**
+
+The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
+Y= A⊕B
+
+**Procedure** 
 
 1.	Type the program in Quartus software.
 
@@ -31,46 +62,35 @@ Hardware – PCs, Cyclone II , USB flasher
 5.	For different input combinations generate the timing diagram.
 
 
-**Program:**
+**PROGRAM**
+
+Program for logic gates and verify its truth table in quartus using Verilog programming
 
 ## Developed by: Ajay kumar T
-# RegisterNumber:212223047001
-```
-module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
-input A,B,C,D,W,X,Y,Z;
-wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
-output F1,F2;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign x6=(X)&(~Y)&(Z);
-assign x7=(~X)&(~Y)&(Z);
-assign x8=(~W)&(X)&(Y);
-assign x9=(W)&(~X)&(Y);
-assign x10=(W)&(X)&(Y);
-assign F1=x1|x2|x3|x4|x5;
-assign F2=x6|x7|x8|x9|x10;
-endmodule
-```
-**Logic Symbol And Truth Table**
-![367221898-1448d3a9-cbf9-4c27-b6d5-4fa7c42418fd](https://github.com/user-attachments/assets/0a156975-83c2-4d7a-9833-565119211470)
-![367221944-79d67801-6b59-449c-8346-4ecc8b05bca4](https://github.com/user-attachments/assets/4da30fc9-2ba2-4706-bb9c-c7a3d06b5b3a)
+## RegisterNumber: 212223047001
 
-**RTL realization**
+ **CODE**
 
-**Output:**
+ 
+ ![image](https://github.com/23004513/study-of-basic-gates/assets/138973069/ee8439c7-8c37-444f-ab2f-085b29f535cd)
+ 
+**Logic symbol & Truthtable**
+
+ ![image](https://github.com/23004513/study-of-basic-gates/assets/138973069/0637a1e9-8297-4190-9169-3b3ca939cf6b)
+
+**RTL realization Output:** 
 
 **RTL**
 
-![image](https://github.com/user-attachments/assets/506314e6-2903-4419-a030-ac10c8f07f58)
+![image](https://github.com/23004513/study-of-basic-gates/assets/138973069/2d8a4e26-bb61-4984-bd36-a8edf62b9434)
 
-**Timing Diagram**
 
-![image](https://github.com/user-attachments/assets/721ee628-65b4-4296-a929-f130162f58aa)
+**OUTPUT**
+
+![image](https://github.com/23004513/study-of-basic-gates/assets/138973069/c8aa777f-970e-4d33-b3d1-c042ecca8581)
 
 **Result:**
 
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+Program for logic gates and verify its truth table in quartus using Verilog programming
+
 
