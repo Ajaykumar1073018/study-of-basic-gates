@@ -33,8 +33,8 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
-## Developed by: THRIKESWAR P
-# RegisterNumber:212222230162
+## Developed by: Ajay kumar T
+# RegisterNumber:212223047001
 ```
 module Boolean_min(A,B,C,D,W,X,Y,Z,F1,F2);
 input A,B,C,D,W,X,Y,Z;
